@@ -4,6 +4,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+from scipy.stats import ttest_ind
+from sklearn.model_selection import train_test_split
+
 #Load Dataset
 df = pd.read_csv("dataset/ai_worker_burnout_attrition_2026.csv")
 print(df.info())
@@ -95,3 +98,46 @@ plt.xlabel("Salary (USD in Thousands)")
 plt.ylabel("Job Satisfaction (1 to 5)")
 plt.show()
 # This graph shows whether better paid employees report higher satisfaction.
+
+# OBJECTIVE 3
+# Experience vs Fear of AI Replacement
+sns.boxplot(
+    x="fear_of_ai_replacement",
+    y="years_experience",
+    data=df
+)
+
+plt.title("Experience vs Fear of AI Replacement")
+plt.show()
+
+# OBJECTIVE 4
+# Attrition Risk Correlation
+
+print("\nTop Factors Affecting Attrition Risk:")
+
+print(
+    df[num_cols].corr()["attrition_risk"]
+    .sort_values(ascending=False)
+)
+
+# OBJECTIVE 5
+# Hypothesis Testing
+
+median_risk = df["attrition_risk"].median()
+
+high = df[df["attrition_risk"] > median_risk]["burnout_score"]
+low  = df[df["attrition_risk"] <= median_risk]["burnout_score"]
+
+t_stat, p_val = ttest_ind(high, low)
+
+print("\nHypothesis Testing")
+print("H0: No significant difference in burnout")
+print("H1: Significant difference in burnout")
+
+print("T-Statistic:", t_stat)
+print("P-Value:", p_val)
+
+if p_val < 0.05:
+    print("Reject H0")
+else:
+    print("Fail to Reject H0")
