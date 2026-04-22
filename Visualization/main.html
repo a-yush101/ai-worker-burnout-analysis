@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Worker Burnout & Attrition Risk</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#020617;
+color:white;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+.glass{
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(12px);
+border:1px solid rgba(255,255,255,.08);
+}
+
+.glow{
+box-shadow:0 0 40px rgba(34,211,238,.15);
+}
+
+img{
+transition:.4s ease;
+}
+
+img:hover{
+transform:scale(1.03);
+}
+</style>
+</head>
+
+<body>
+
+<div class="max-w-7xl mx-auto p-6 space-y-8">
+
+<!-- HERO SECTION -->
+<section class="glass glow rounded-3xl p-10">
+
+<p class="text-cyan-400 tracking-[0.3em] text-xs">
+DATA SCIENCE PROJECT
+</p>
+
+<h1 class="text-6xl font-black mt-3 leading-tight">
+AI Worker Burnout & <br>
+<span class="text-cyan-400">Attrition Risk Analysis</span>
+</h1>
+
+<p class="text-slate-300 mt-4 max-w-3xl leading-7">
+A Python Data Science project exploring how AI adoption affects employee burnout,
+job satisfaction, productivity, and attrition risk using EDA, hypothesis testing,
+and machine learning.
+</p>
+
+<p class="mt-6 text-slate-400">
+Made By: Your Name
+</p>
+
+<div class="grid md:grid-cols-4 gap-4 mt-8">
+
+<div class="glass rounded-2xl p-4">
+<p>Rows</p>
+<h3 class="text-3xl text-cyan-400">1000+</h3>
+</div>
+
+<div class="glass rounded-2xl p-4">
+<p>Features</p>
+<h3 class="text-3xl text-cyan-400">13</h3>
+</div>
+
+<div class="glass rounded-2xl p-4">
+<p>Strong Corr</p>
+<h3 class="text-3xl text-cyan-400">0.61</h3>
+</div>
+
+<div class="glass rounded-2xl p-4">
+<p>Best R²</p>
+<h3 class="text-3xl text-cyan-400">0.38</h3>
+</div>
+
+</div>
+</section>
+
+<!-- EDA -->
+<section class="glass rounded-3xl p-10">
+
+<h2 class="text-3xl font-bold text-center text-cyan-400">
+EDA INSIGHTS
+</h2>
+
+<div class="w-24 h-1 bg-gradient-to-r from-cyan-400 to-purple-500 mx-auto rounded-full mt-3 mb-8"></div>
+
+<div class="grid md:grid-cols-2 gap-6">
+
+<!-- Heatmap -->
+<div class="rounded-3xl bg-white/5 border border-white/10 p-6">
+
+<h3 class="text-2xl font-bold mb-4">
+Correlation Heatmap
+</h3>
+
+<p class="text-slate-300 leading-7 mb-5">
+The heatmap shows relationships among numeric variables.
+It helped identify strong positive and negative connections such as burnout,
+job satisfaction, productivity, and AI task replacement.
+</p>
+
+<div class="rounded-2xl overflow-hidden border border-cyan-700 bg-slate-950">
+<img src="Images/Heatmap1.png" class="w-full h-full object-contain">
+</div>
+
+</div>
+
+<!-- Outliers -->
+<div class="rounded-3xl bg-white/5 border border-white/10 p-6">
+
+<h3 class="text-2xl font-bold mb-4">
+Outlier Detection (Boxplots)
+</h3>
+
+<p class="text-slate-300 leading-7 mb-5">
+Boxplots were used to identify unusual values in important variables before analysis.
+This improves data quality and makes findings more reliable.
+</p>
+
+<div class="grid gap-4">
+
+<div class="rounded-2xl overflow-hidden border border-cyan-700 bg-slate-950">
+<img src="Images/Outlier1.png">
+</div>
+
+<div class="rounded-2xl overflow-hidden border border-cyan-700 bg-slate-950">
+<img src="Images/Outlier2.png">
+</div>
+<div class="rounded-2xl overflow-hidden border border-cyan-700 bg-slate-950">
+<img src="Images/Outlier3.png">
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- OBJECTIVES -->
+<section id="objectives" class="space-y-6"></section>
+
+<!-- FINAL SUMMARY -->
+<section class="glass rounded-3xl p-10">
+
+<h2 class="text-3xl font-bold text-center text-cyan-400">
+FINAL SUMMARY
+</h2>
+
+<div class="w-28 h-1 bg-gradient-to-r from-cyan-400 to-purple-500 mx-auto rounded-full mt-3 mb-8"></div>
+
+<div class="grid md:grid-cols-4 gap-5">
+
+<div class="rounded-2xl bg-white/5 border border-white/10 p-6 text-center">
+<div class="text-4xl mb-4">🤖</div>
+<p class="font-semibold text-cyan-400">Dual Impact of AI</p>
+<p class="text-slate-300 mt-3 leading-7">
+AI improves productivity when used wisely, but excessive task replacement can increase burnout.
+</p>
+</div>
+
+<div class="rounded-2xl bg-white/5 border border-white/10 p-6 text-center">
+<div class="text-4xl mb-4">😊</div>
+<p class="font-semibold text-cyan-400">Employee Satisfaction</p>
+<p class="text-slate-300 mt-3 leading-7">
+Lower job satisfaction strongly connects with higher attrition risk.
+</p>
+</div>
+
+<div class="rounded-2xl bg-white/5 border border-white/10 p-6 text-center">
+<div class="text-4xl mb-4">📈</div>
+<p class="font-semibold text-cyan-400">Balanced Adoption</p>
+<p class="text-slate-300 mt-3 leading-7">
+Organizations should adopt AI as assistance, not total replacement.
+</p>
+</div>
+
+<div class="rounded-2xl bg-white/5 border border-white/10 p-6 text-center">
+<div class="text-4xl mb-4">🎯</div>
+<p class="font-semibold text-cyan-400">Data Driven Decisions</p>
+<p class="text-slate-300 mt-3 leading-7">
+Analytics can help create healthier, smarter, and more productive workplaces.
+</p>
+</div>
+
+</div>
+</section>
+
+</div>
+
+<script>
+
+const data = [
+
+[
+'Objective 1',
+'AI Replacement vs Burnout',
+
+'This objective studies whether increasing automation of employee tasks through AI systems contributes to higher burnout levels among workers. A scatter plot was used to understand the direction and strength of the relationship between AI task replacement percentage and burnout score.',
+
+'The graph showed a clear upward trend. Employees whose tasks were replaced more heavily by AI generally reported higher burnout scores. The relationship was positive and visually strong.',
+
+'Organizations should avoid excessive automation without role redesign or support systems. If employees feel insecure or overloaded, burnout may rise significantly.'
+],
+
+[
+'Objective 2',
+'Burnout vs Job Satisfaction',
+
+'This objective examines how employee burnout affects satisfaction at work. Burnout often reduces motivation, engagement, morale, and overall workplace experience.',
+
+'The scatter plot showed a downward trend. Employees with higher burnout scores consistently reported lower job satisfaction ratings.',
+
+'Reducing burnout through healthier workloads, recognition programs, and supportive management can improve satisfaction and employee retention.'
+],
+
+[
+'Objective 3',
+'Attrition Risk vs AI Replacement',
+
+'This objective compares AI task replacement percentages across Low, Medium, and High attrition risk groups using a boxplot. It helps understand whether automation pressure relates to quitting risk.',
+
+'The boxplot showed that employees in the High attrition risk group had the highest median AI replacement percentage. Low-risk employees had the lowest values.',
+
+'When employees feel more replaceable due to automation, they may become disengaged and more likely to leave the organization.'
+],
+
+[
+'Objective 4',
+'AI Hours vs Productivity',
+
+'This objective evaluates whether spending more hours using AI assistance tools improves employee productivity. AI tools may save time and improve task efficiency.',
+
+'The graph indicated a moderate positive relationship. Employees using AI tools for more hours generally had better productivity scores.',
+
+'AI works best as an assistant for repetitive or time-consuming work. Proper adoption can improve output and efficiency.'
+],
+
+[
+'Objective 5',
+'Hypothesis Testing (T-Test)',
+
+'This objective statistically tests whether job satisfaction significantly differs between employees with High attrition risk and Low attrition risk. An independent samples t-test was used.',
+
+'The p-value was below 0.001, so the null hypothesis was rejected. This confirms a significant difference in satisfaction between both groups.',
+
+'Employees with lower satisfaction are significantly more likely to fall into the high attrition category. HR teams should address satisfaction early.'
+],
+
+[
+'Objective 6',
+'Linear Regression',
+
+'This objective builds a predictive model where AI task replacement percentage is used to estimate burnout score. Simple Linear Regression was applied.',
+
+'The model achieved an R² value of 0.38, meaning 38% of burnout variation was explained by AI task replacement alone. The slope was positive.',
+
+'AI replacement is an important predictor of burnout, but other factors like workload, leadership, and work culture also influence employee well-being.'
+]
+
+];
+
+const images = [
+'Images/Obj1.png',
+'Images/Obj2.png',
+'Images/Obj3.png',
+'Images/Obj4.png',
+'Images/Obj7.png',
+'Images/Obj6.png'
+];
+
+const wrap = document.getElementById("objectives");
+
+data.forEach((x,i)=>{
+
+wrap.innerHTML += `
+<section class="glass rounded-3xl p-8 grid lg:grid-cols-[110px_1fr_1fr] gap-6 items-center">
+
+<div class="flex justify-center">
+<div class="w-20 h-20 rounded-3xl border border-cyan-500/40 bg-cyan-500/10 flex items-center justify-center text-3xl font-black text-cyan-400">
+0${i+1}
+</div>
+</div>
+
+<div>
+<h2 class="text-3xl font-bold">${x[1]}</h2>
+<p class="text-cyan-400 text-sm mt-1">${x[0]}</p>
+
+<p class="text-slate-300 mt-4 leading-7">
+<span class="text-cyan-400 font-semibold">About:</span> ${x[2]}
+</p>
+
+<div class="rounded-2xl border border-cyan-700 mt-5 overflow-hidden bg-slate-950">
+<img src="${images[i]}" class="w-full h-full object-contain">
+</div>
+</div>
+
+<div class="space-y-4">
+
+<div class="rounded-2xl bg-white/5 p-5 border border-white/10">
+<p class="text-yellow-300 font-semibold mb-2">Result</p>
+<p class="text-slate-300 leading-7">${x[3]}</p>
+</div>
+
+<div class="rounded-2xl bg-white/5 p-5 border border-white/10">
+<p class="text-emerald-400 font-semibold mb-2">Insight</p>
+<p class="text-slate-300 leading-7">${x[4]}</p>
+</div>
+
+</div>
+
+</section>
+`;
+
+});
+
+</script>
+
+</body>
+</html>
